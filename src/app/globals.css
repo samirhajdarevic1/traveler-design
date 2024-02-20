@@ -2,32 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.header-title {
+  width: 122.03px;
+  height: 13.5px;
+  color: #1f2327;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.button {
+  width: Fixed (360px);
+  height: Fixed (744px);
+  top: 56px;
+  left: 36px;
+  padding: 32px, 0px, 64px, 0px;
+  gap: 32px;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
+.card {
+  margin-left: 150px;
+  width: 444px;
+  height: 600px;
+  border-radius: 20px;
+  border-width: 4px;
+  border-color: rgb(195, 193, 193);
+  background-image: url("../../bac-img.jpg");
+  background-size: 444px 600px;
+  /* background: rgb(93, 86, 150);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgba(93, 86, 150, 1) 0%,
+    rgba(41, 41, 74, 0.4457274826789839) 56%,
+    rgba(77, 124, 184, 1) 96%
+  ); */
+  display: flex;
+  justify-content: center;
+}
+.white-card {
+  width: 404px;
+  height: 464px;
+  border: 0px, 0px, 1px, 0px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+}
+.text-black {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  font-weight: 500;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-prim-gray {
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.white-card-bottom-border {
+  position: relative;
+  width: 401px;
+  left: -19px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  margin-top: 1.25rem /* 20px */;
+  margin-bottom: 1.25rem /* 20px */;
+}
+.header {
+  width: 1200px;
+  height: 56px;
+  padding: 14px, 554px, 14px, 20px;
+  border: 0px, 0px, 1px, 0px;
+}
+.traveling-members-card {
+  width: 360px;
+  height: 744px;
+  top: 56px;
+  left: 36px;
+  padding: 32px, 0px, 64px, 0px;
+  margin-right: 100px;
+}
+.gray-question {
+  color: rgba(96, 100, 108, 1);
+}
+.gray-email {
+  color: rgba(237, 243, 253, 0.68);
+  width: 167px;
+  height: 20px;
+}
+.traveler-footer {
+  color: rgba(230, 244, 254, 0.46);
 }
