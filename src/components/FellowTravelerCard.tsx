@@ -109,20 +109,20 @@ function FellowTravelerCard({
               </p>
             </div>
             <div className="flex justify-between">
-              <p className=" text-black">
-                <span className=" w-[22px] h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
+              <p className=" text-black flex">
+                <span className="w-[22px] h-[22px] bg-gray-100 mr-2 flex items-center justify-center rounded-full text-xs font-semibold">
                   {legalSpouse}
                 </span>
                 Legal spouce
               </p>
-              <p className=" text-black">
-                <span className="w-5 h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
+              <p className=" text-black flex">
+                <span className="w-[22px] h-[22px] bg-gray-100 mr-2 flex items-center justify-center rounded-full text-xs font-semibold">
                   {childrenUnderEighteen}
                 </span>
                 Children under 18
               </p>
-              <p className=" text-black">
-                <span className="w-5 h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
+              <p className=" text-black flex">
+                <span className="w-[22px] h-[22px] bg-gray-100 mr-2 flex items-center justify-center rounded-full text-xs font-semibold">
                   {pets}
                 </span>
                 Pets

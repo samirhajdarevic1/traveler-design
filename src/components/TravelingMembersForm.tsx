@@ -38,7 +38,7 @@ function TravelingMembersForm({
           <p className=" ml-2 font-medium mb-1  text-sm">Traveling members</p>
         </div>
         <div className="mb-4 flex items-center border-b">
-          <div className="mb-4 flex flex-col">
+          <div className="mb-[18px] flex flex-col">
             <div className="flex flex-col">
               <label
                 htmlFor="legal-spouse"
@@ -72,7 +72,7 @@ function TravelingMembersForm({
           </div>
         </div>
         <div className="mb-4 flex items-center border-b">
-          <div className="mb-4 flex flex-col">
+          <div className="mb-[18px] flex flex-col">
             <div className="flex flex-col">
               <label
                 htmlFor="children-under-18"
