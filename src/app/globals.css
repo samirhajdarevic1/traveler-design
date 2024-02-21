@@ -19,7 +19,7 @@
 .card {
   margin-left: 150px;
   width: 444px;
-  height: 600px;
+  height: 602px;
   border-radius: 20px;
   border-width: 4px;
   border-color: rgb(195, 193, 193);
@@ -39,7 +39,7 @@
   width: 404px;
   height: 464px;
   border: 0px, 0px, 1px, 0px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 20px;
   background-color: white;
 }
@@ -74,10 +74,7 @@
 .traveling-members-card {
   width: 360px;
   height: 744px;
-  top: 56px;
-  left: 36px;
-  padding: 32px, 0px, 64px, 0px;
-  margin-right: 100px;
+  margin: 0px;
 }
 .gray-question {
   color: rgba(96, 100, 108, 1);
@@ -89,4 +86,7 @@
 }
 .traveler-footer {
   color: rgba(230, 244, 254, 0.46);
+}
+.gray-shadow {
+  box-shadow: 0px 0px 1px 2px #dbdbdb;
 }

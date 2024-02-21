@@ -1,31 +1,25 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import NavigationButtons from "./NavigationButtons";
 
-function TravelingMembersForm() {
-  const [legalSpouse, setLegalSpouses] = useState(1);
-  const [childrenUnderEighteen, setChildernUnderEighteen] = useState(2);
-  const [pets, setPets] = useState(5);
-
-  const submitForm = () => {
-    const confirmation = window.confirm("Are you sure you want to continue?");
-    if (confirmation) {
-      console.log(
-        "Continue to the next step...",
-        `Your data: {
-      spouse: ${legalSpouse}
-      children under 18: ${childrenUnderEighteen}
-      pets: ${pets}
-      }`
-      );
-    } else {
-      console.log("Cancelled");
-    }
-  };
-
+function TravelingMembersForm({
+  legalSpouse,
+  childrenUnderEighteen,
+  pets,
+  setLegalSpouses,
+  setChildernUnderEighteen,
+  setPets,
+}: {
+  legalSpouse: number;
+  childrenUnderEighteen: number;
+  pets: number;
+  setLegalSpouses: Dispatch<SetStateAction<number>>;
+  setChildernUnderEighteen: Dispatch<SetStateAction<number>>;
+  setPets: Dispatch<SetStateAction<number>>;
+}) {
   return (
     <>
       <form className="border w-[360px] h-[268px] border-gray-300 p-4 rounded-2xl mb-8">
-        <div className="border-b-2 mb-4 flex">
+        <div className="border-b mb-4 flex">
           <svg
             width="20"
             height="20"
@@ -41,7 +35,7 @@ function TravelingMembersForm() {
             />
           </svg>
 
-          <p className=" ml-1 font-medium mb-1  text-sm">Traveling members</p>
+          <p className=" ml-2 font-medium mb-1  text-sm">Traveling members</p>
         </div>
         <div className="mb-4 flex items-center border-b">
           <div className="mb-4 flex flex-col">
@@ -65,7 +59,7 @@ function TravelingMembersForm() {
             >
               -
             </button>
-            <span className="p-2 rounded text-center w-10 text-base font-semibold">
+            <span className="p-2 rounded-full text-center w-10 h-10 text-base font-semibold bg-gray-100">
               {legalSpouse}
             </span>
             <button
@@ -145,7 +139,6 @@ function TravelingMembersForm() {
           </div>
         </div>
       </form>
-      <NavigationButtons submitForm={submitForm} />
     </>
   );
 }

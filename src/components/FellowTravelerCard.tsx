@@ -1,6 +1,14 @@
 import React from "react";
 
-function FellowTravelerCard() {
+function FellowTravelerCard({
+  legalSpouse,
+  childrenUnderEighteen,
+  pets,
+}: {
+  legalSpouse: number;
+  childrenUnderEighteen: number;
+  pets: number;
+}) {
   return (
     <div className="card">
       <div>
@@ -72,11 +80,11 @@ function FellowTravelerCard() {
             </p>
           </div>
           <div>
-            <div className=" mb-4">
+            <div className=" mb-[22px]">
               <p className="text-prim-gray">Full Remote Job</p>
               <p className="text-black">Yes, for over 6 months</p>
             </div>
-            <div className=" mb-4">
+            <div className=" mb-[22px]">
               <p className="text-prim-gray">Self employed</p>
               <p className="text-black">
                 {"I'm"} self employed {"<"} 3 years business
@@ -102,20 +110,20 @@ function FellowTravelerCard() {
             </div>
             <div className="flex justify-between">
               <p className=" text-black">
-                <span className=" w-5 h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
-                  1
+                <span className=" w-[22px] h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
+                  {legalSpouse}
                 </span>
                 Legal spouce
               </p>
               <p className=" text-black">
                 <span className="w-5 h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
-                  2
+                  {childrenUnderEighteen}
                 </span>
                 Children under 18
               </p>
               <p className=" text-black">
                 <span className="w-5 h-4 bg-gray-100 mr-3 p-1 rounded-xl text-xs font-semibold">
-                  5
+                  {pets}
                 </span>
                 Pets
               </p>
@@ -130,7 +138,7 @@ function FellowTravelerCard() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center p-2 font-semibold text-xs traveler-footer">
+        <div className="flex justify-center h-12 p-4 font-semibold text-xs traveler-footer">
           <p>Personal Travel Card by Citizen Remote</p>
         </div>
       </div>
