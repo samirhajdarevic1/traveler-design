@@ -59,7 +59,7 @@ function TravelingMembersForm({
             >
               -
             </button>
-            <span className="p-2 rounded-full text-center w-10 h-10 text-base font-semibold bg-gray-100">
+            <span className="p-2 rounded text-center w-10 text-base font-semibold">
               {legalSpouse}
             </span>
             <button
